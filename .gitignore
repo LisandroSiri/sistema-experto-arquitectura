@@ -1,1 +1,5 @@
-venv
+venv/
+__pycache__/
+*.pyc
+resultado_consulta.json
+debug.log
