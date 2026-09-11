@@ -1,0 +1,140 @@
+{
+  "backend": {
+    "Node.js + Express + TypeScript": {
+      "dificultad": 3,
+      "rendimiento": 5,
+      "escalabilidad": 5,
+      "ecosistema": 9,
+      "justificacion": "Framework minimalista y flexible, gran comunidad y documentación. TypeScript añade seguridad de tipos con baja curva de aprendizaje.",
+      "alternativas": ["Fastify (mayor rendimiento, curva media)", "NestJS (estructura empresarial, curva alta)"]
+    },
+    "Python + FastAPI": {
+      "dificultad": 4,
+      "rendimiento": 7,
+      "escalabilidad": 7,
+      "ecosistema": 8,
+      "justificacion": "Alto rendimiento con async, documentación automática con OpenAPI, ideal para APIs modernas.",
+      "alternativas": ["Flask (más simple, menos features)", "Django REST (más completo, más pesado)"]
+    },
+    "Java + Spring Boot": {
+      "dificultad": 7,
+      "rendimiento": 9,
+      "escalabilidad": 9,
+      "ecosistema": 9,
+      "justificacion": "Estándar empresarial, robusto, con ecosistema maduro para microservicios y seguridad avanzada.",
+      "alternativas": ["Quarkus (más ligero, curva media)", "Micronaut (cloud-native)"]
+    },
+    "Google Apps Script": {
+      "dificultad": 2,
+      "rendimiento": 3,
+      "escalabilidad": 2,
+      "ecosistema": 4,
+      "justificacion": "Sin infraestructura propia, gratuito, integración nativa con Google Workspace. Ideal para prototipos o formularios de contacto.",
+      "alternativas": ["Firebase Functions (más potente, curva media)", "Vercel Serverless (ecosistema JS)"]
+    },
+    "Go + Gin": {
+      "dificultad": 6,
+      "rendimiento": 10,
+      "escalabilidad": 10,
+      "ecosistema": 6,
+      "justificacion": "Rendimiento excepcional y concurrencia nativa. Ideal para APIs de alto rendimiento.",
+      "alternativas": ["Node.js (más ecosistema, menos rendimiento)", "Rust + Actix (máximo rendimiento, curva alta)"]
+    }
+  },
+  "frontend": {
+    "React + Vite": {
+      "dificultad": 3,
+      "rendimiento": 8,
+      "seo": 5,
+      "ecosistema": 9,
+      "justificacion": "SPA rápida, excelente DX, hot module replacement. Ecosistema enorme y comunidad activa.",
+      "alternativas": ["Next.js (SSR/SEO, curva media)", "Vue.js (curva baja, ecosistema menor)"]
+    },
+    "Next.js": {
+      "dificultad": 5,
+      "rendimiento": 9,
+      "seo": 10,
+      "ecosistema": 9,
+      "justificacion": "Framework fullstack con SSR/SSG, ideal para SEO y rendimiento. Server Components reducen bundle.",
+      "alternativas": ["Remix (similar, menor comunidad)", "Astro (contenido estático, islas de interactividad)"]
+    },
+    "Angular": {
+      "dificultad": 8,
+      "rendimiento": 8,
+      "seo": 7,
+      "ecosistema": 8,
+      "justificacion": "Framework completo con inyección de dependencias, ideal para equipos grandes y aplicaciones empresariales.",
+      "alternativas": ["React (más flexible, menor estructura)", "Vue.js (curva menor, menos opinado)"]
+    },
+    "Svelte + SvelteKit": {
+      "dificultad": 4,
+      "rendimiento": 10,
+      "seo": 9,
+      "ecosistema": 6,
+      "justificacion": "Compilado a JS vanilla, sin virtual DOM. Bundle mínimo y rendimiento excepcional.",
+      "alternativas": ["React (ecosistema mayor)", "Vue.js (curva similar)"]
+    }
+  },
+  "database": {
+    "PostgreSQL": {
+      "dificultad": 4,
+      "escalabilidad": 9,
+      "consistencia": 10,
+      "justificacion": "Base de datos relacional robusta, ACID, con soporte JSONB para datos semiestructurados.",
+      "alternativas": ["MySQL (más simple, menor features)", "CockroachDB (distribuida, curva alta)"]
+    },
+    "MongoDB": {
+      "dificultad": 3,
+      "escalabilidad": 8,
+      "consistencia": 7,
+      "justificacion": "NoSQL flexible, esquema dinámico, ideal para prototipos rápidos y datos no estructurados.",
+      "alternativas": ["PostgreSQL + JSONB (consistencia relacional)", "Firebase (serverless, vendor lock-in)"]
+    },
+    "Firebase Firestore": {
+      "dificultad": 2,
+      "escalabilidad": 9,
+      "consistencia": 6,
+      "justificacion": "Serverless, tiempo real, sin administración de servidores. Ideal para MVP y equipos pequeños.",
+      "alternativas": ["Supabase (SQL + tiempo real, open source)", "MongoDB Atlas (flexibilidad)"]
+    },
+    "SQLite": {
+      "dificultad": 1,
+      "escalabilidad": 2,
+      "consistencia": 10,
+      "justificacion": "Sin servidor, embebido, perfecto para prototipos, CLIs o aplicaciones de escritorio.",
+      "alternativas": ["PostgreSQL (escalabilidad)", "DuckDB (analítica embebida)"]
+    }
+  },
+  "combos": {
+    "MERN": {
+      "stack": "MongoDB + Express + React + Node.js",
+      "dificultad": 3,
+      "ideal_para": "Prototipos web, SPAs, equipos JS",
+      "justificacion": "Stack unificado en JavaScript. Gran comunidad y recursos de aprendizaje."
+    },
+    "JAMstack": {
+      "stack": "JavaScript + APIs + Markup",
+      "dificultad": 2,
+      "ideal_para": "Sitios estáticos, blogs, landing pages",
+      "justificacion": "Sin servidor, CDN, rendimiento excepcional y bajo costo."
+    },
+    "T3 Stack": {
+      "stack": "TypeScript + tRPC + Tailwind + Next.js + Prisma",
+      "dificultad": 6,
+      "ideal_para": "Aplicaciones fullstack type-safe",
+      "justificacion": "Type safety end-to-end, excelente DX, ideal para equipos que valoran la calidad de código."
+    },
+    "Django + React": {
+      "stack": "Python + Django + DRF + React",
+      "dificultad": 5,
+      "ideal_para": "Aplicaciones con lógica de negocio compleja",
+      "justificacion": "Django acelera el backend (ORM, admin, auth), React ofrece frontend moderno."
+    },
+    "PERN": {
+      "stack": "PostgreSQL + Express + React + Node.js",
+      "dificultad": 4,
+      "ideal_para": "Aplicaciones web con datos relacionales",
+      "justificacion": "Como MERN pero con base de datos relacional para integridad de datos."
+    }
+  }
+}

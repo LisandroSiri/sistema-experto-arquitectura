@@ -1,0 +1,167 @@
+{
+  "bloques": [
+    {
+      "id": "A",
+      "nombre": "Contexto y naturaleza del proyecto",
+      "preguntas": [
+        {
+          "id": "tipo_proyecto",
+          "texto": "¿Qué tipo de proyecto vas a desarrollar?",
+          "tipo": "single",
+          "opciones": ["Web", "Móvil (nativa/híbrida)", "API/Backend puro", "Escritorio", "Microservicio", "CLI/herramienta interna", "Extensión de navegador", "Bot/automatización", "IoT"]
+        },
+        {
+          "id": "naturaleza",
+          "texto": "¿Cuál es la naturaleza principal del problema?",
+          "tipo": "single",
+          "opciones": ["CRUD/gestión de datos", "Contenido/publishing (blog, landing, e-commerce)", "Tiempo real (chat, colaboración, streaming)", "Procesamiento/analítica de datos", "IA/ML", "Automatización de procesos", "Integración de sistemas"]
+        },
+        {
+          "id": "vida_util",
+          "texto": "¿Cuál es la vida útil esperada del proyecto?",
+          "tipo": "single",
+          "opciones": ["Prototipo/PoC descartable", "MVP para validar mercado", "Producto en producción a largo plazo"]
+        },
+        {
+          "id": "restricciones_cliente",
+          "texto": "¿Hay restricciones impuestas por el cliente/empresa? (lenguaje obligatorio, cloud obligatorio, on-premise, etc.)",
+          "tipo": "text",
+          "default": "Ninguna"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "nombre": "Equipo",
+      "preguntas": [
+        {
+          "id": "tamano_equipo",
+          "texto": "¿Cuál es el tamaño del equipo?",
+          "tipo": "single",
+          "opciones": ["1 persona", "2-5 personas", "6-15 personas", "15+ personas"]
+        },
+        {
+          "id": "tecnologias_dominadas",
+          "texto": "¿Qué tecnologías domina el equipo? (selección múltiple)",
+          "tipo": "multi",
+          "opciones": ["JavaScript/TypeScript", "Python", "Java", "C#/.NET", "PHP", "Ruby", "Go", "Rust", "Kotlin/Swift", "SQL", "NoSQL", "Cloud (AWS/GCP/Azure)", "DevOps/CI-CD"]
+        },
+        {
+          "id": "experiencia_general",
+          "texto": "¿Cuál es el nivel de experiencia general del equipo?",
+          "tipo": "single",
+          "opciones": ["Junior", "Semi-senior", "Senior", "Mixto"]
+        },
+        {
+          "id": "devops",
+          "texto": "¿Manejan DevOps/CI-CD/contenedores?",
+          "tipo": "single",
+          "opciones": ["Sí, completamente", "Parcialmente", "No"]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "nombre": "Restricciones de negocio",
+      "preguntas": [
+        {
+          "id": "plazo",
+          "texto": "¿Cuál es el plazo de entrega?",
+          "tipo": "single",
+          "opciones": ["Inmediato (días)", "Corto (semanas)", "Normal (1-3 meses)", "Largo (6+ meses)"]
+        },
+        {
+          "id": "presupuesto_infra",
+          "texto": "¿Cuál es el presupuesto mensual para infraestructura?",
+          "tipo": "single",
+          "opciones": ["Bajo (<$50 USD)", "Medio ($50-200 USD)", "Alto ($200+ USD)"]
+        },
+        {
+          "id": "presupuesto_licencias",
+          "texto": "¿Hay presupuesto para licencias/herramientas propietarias?",
+          "tipo": "single",
+          "opciones": ["Sí", "No", "Limitado"]
+        },
+        {
+          "id": "mantenimiento",
+          "texto": "¿Cuál es el modelo de mantenimiento post-entrega?",
+          "tipo": "single",
+          "opciones": ["Sin mantenimiento", "Ocasional", "Continuo con el mismo equipo"]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "nombre": "Requerimientos técnicos",
+      "preguntas": [
+        {
+          "id": "escalabilidad",
+          "texto": "¿Cuántos usuarios simultáneos esperas manejar?",
+          "tipo": "single",
+          "opciones": ["<100", "100-10k", "10k-100k", "100k+"]
+        },
+        {
+          "id": "complejidad_datos",
+          "texto": "¿Qué complejidad tienen los datos/relaciones?",
+          "tipo": "single",
+          "opciones": ["Baja (pocas entidades, relaciones simples)", "Media (varias entidades, relaciones moderadas)", "Alta (muchas entidades, relaciones complejas)"]
+        },
+        {
+          "id": "rendimiento",
+          "texto": "¿Cuáles son los requerimientos de rendimiento/latencia?",
+          "tipo": "single",
+          "opciones": ["Bajo (no crítico)", "Medio (<500ms)", "Alto (<100ms)"]
+        },
+        {
+          "id": "tiempo_real",
+          "texto": "¿El proyecto requiere capacidades de tiempo real?",
+          "tipo": "single",
+          "opciones": ["Sí (websockets, colaboración en vivo)", "No"]
+        },
+        {
+          "id": "offline_pwa",
+          "texto": "¿Requiere funcionamiento offline o ser PWA?",
+          "tipo": "single",
+          "opciones": ["Sí", "No"]
+        },
+        {
+          "id": "multiplataforma",
+          "texto": "¿Necesitas código compartido entre web y móvil?",
+          "tipo": "single",
+          "opciones": ["Sí (React Native, Flutter, etc.)", "No"]
+        },
+        {
+          "id": "seo_ssr",
+          "texto": "¿El proyecto necesita SEO/Servidor SSR?",
+          "tipo": "single",
+          "opciones": ["Sí, crítico", "Sí, deseable", "No"],
+          "condicion": "tipo_proyecto == 'Web'"
+        },
+        {
+          "id": "i18n",
+          "texto": "¿Necesita soporte multi-idioma (i18n)?",
+          "tipo": "single",
+          "opciones": ["Sí", "No"]
+        },
+        {
+          "id": "seguridad",
+          "texto": "¿Qué nivel de seguridad/compliance se requiere?",
+          "tipo": "single",
+          "opciones": ["Bajo (informativo)", "Medio (login, datos personales)", "Alto (financiero/salud → PCI-DSS, HIPAA, GDPR)"]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "nombre": "Infraestructura",
+      "preguntas": [
+        {
+          "id": "cloud",
+          "texto": "¿Qué plataforma cloud prefieres?",
+          "tipo": "single",
+          "opciones": ["AWS", "Google Cloud", "Azure", "VPS (DigitalOcean, Linode, etc.)", "On-premise", "Sin preferencia"]
+        }
+      ]
+    }
+  ]
+}

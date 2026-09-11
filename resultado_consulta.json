@@ -1,0 +1,46 @@
+{
+  "respuestas": {
+    "tipo_proyecto": "API/Backend puro",
+    "naturaleza": "CRUD/gestión de datos",
+    "vida_util": "Producto en producción a largo plazo",
+    "restricciones_cliente": "Ninguna",
+    "tamano_equipo": "2-5 personas",
+    "tecnologias_dominadas": "Java",
+    "experiencia_general": "Junior",
+    "devops": "No",
+    "plazo": "Normal (1-3 meses)",
+    "presupuesto_infra": "Alto ($200+ USD)",
+    "presupuesto_licencias": "Sí",
+    "mantenimiento": "Continuo con el mismo equipo",
+    "escalabilidad": "100-10k",
+    "complejidad_datos": "Media (varias entidades, relaciones moderadas)",
+    "rendimiento": "Bajo (no crítico)",
+    "tiempo_real": "Sí (websockets, colaboración en vivo)",
+    "offline_pwa": "No",
+    "multiplataforma": "No",
+    "i18n": "No",
+    "seguridad": "Medio (login, datos personales)",
+    "cloud": "AWS"
+  },
+  "recomendacion": {
+    "backend": "Node.js + Express + TypeScript",
+    "frontend": "No aplica (solo API)",
+    "bd": "PostgreSQL + Prisma",
+    "deploy": "Railway/Render + Neon",
+    "justificacion": "Stack API estándar con buen ecosistema y comunidad. TypeScript añade seguridad de tipos.",
+    "alternativas": [
+      {
+        "stack": "Python + FastAPI",
+        "motivo_descarte": "Si preferís Python"
+      },
+      {
+        "stack": "Go + Gin",
+        "motivo_descarte": "Si necesitás máximo rendimiento"
+      }
+    ],
+    "combo_sugerido": null,
+    "confianza": 75
+  },
+  "conflictos": [],
+  "casos_similares": []
+}

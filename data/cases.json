@@ -1,0 +1,124 @@
+{
+  "casos": [
+    {
+      "id": 1,
+      "timestamp": "2025-01-15T10:30:00",
+      "respuestas": {
+        "tipo_proyecto": "Web",
+        "naturaleza": "Contenido/publishing (blog, landing, e-commerce)",
+        "vida_util": "Prototipo/PoC descartable",
+        "restricciones_cliente": "Ninguna",
+        "tamano_equipo": "1 persona",
+        "tecnologias_dominadas": [
+          "JavaScript/TypeScript"
+        ],
+        "experiencia_general": "Semi-senior",
+        "devops": "No",
+        "plazo": "Corto (semanas)",
+        "presupuesto_infra": "Bajo (<$50 USD)",
+        "presupuesto_licencias": "No",
+        "mantenimiento": "Sin mantenimiento",
+        "escalabilidad": "<100",
+        "complejidad_datos": "Baja (pocas entidades, relaciones simples)",
+        "rendimiento": "Bajo (no crítico)",
+        "tiempo_real": "No",
+        "offline_pwa": "No",
+        "multiplataforma": "No",
+        "seo_ssr": "Sí, crítico",
+        "i18n": "No",
+        "seguridad": "Bajo (informativo)",
+        "cloud": "Sin preferencia"
+      },
+      "recomendacion": {
+        "backend": "Google Apps Script (para formulario de contacto)",
+        "frontend": "Astro + Tailwind CSS",
+        "bd": "Sin BD (Google Sheets como almacenamiento temporal)",
+        "deploy": "Netlify/Vercel/Cloudflare Pages (gratuito)"
+      },
+      "confianza": 95,
+      "metadatos": {
+        "caso_ejemplo": true,
+        "nota": "Caso clásico de landing page con SEO crítico, sin backend real"
+      }
+    },
+    {
+      "id": 2,
+      "timestamp": "2025-02-20T14:15:00",
+      "respuestas": {
+        "tipo_proyecto": "API/Backend puro",
+        "naturaleza": "Procesamiento/analítica de datos",
+        "vida_util": "Producto en producción a largo plazo",
+        "restricciones_cliente": "Cloud AWS obligatorio",
+        "tamano_equipo": "6-15 personas",
+        "tecnologias_dominadas": [
+          "Go",
+          "Python",
+          "SQL",
+          "Cloud (AWS/GCP/Azure)",
+          "DevOps/CI-CD"
+        ],
+        "experiencia_general": "Senior",
+        "devops": "Sí, completamente",
+        "plazo": "Largo (6+ meses)",
+        "presupuesto_infra": "Alto ($200+ USD)",
+        "presupuesto_licencias": "Sí",
+        "mantenimiento": "Continuo con el mismo equipo",
+        "escalabilidad": "10k-100k",
+        "complejidad_datos": "Alta (muchas entidades, relaciones complejas)",
+        "rendimiento": "Alto (<100ms)",
+        "tiempo_real": "No",
+        "offline_pwa": "No",
+        "multiplataforma": "No",
+        "i18n": "No",
+        "seguridad": "Medio (login, datos personales)",
+        "cloud": "AWS"
+      },
+      "recomendacion": {
+        "backend": "Go + Gin",
+        "frontend": "No aplica (solo API)",
+        "bd": "PostgreSQL + Redis (caché)",
+        "deploy": "Docker + Kubernetes (AWS EKS)"
+      },
+      "confianza": 92,
+      "metadatos": {
+        "caso_ejemplo": true,
+        "nota": "API de alto rendimiento para procesamiento de datos con equipo senior"
+      }
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-09-10T10:08:03.870593",
+      "respuestas": {
+        "tipo_proyecto": "API/Backend puro",
+        "naturaleza": "CRUD/gestión de datos",
+        "vida_util": "Producto en producción a largo plazo",
+        "restricciones_cliente": "Ninguna",
+        "tamano_equipo": "2-5 personas",
+        "tecnologias_dominadas": "Java",
+        "experiencia_general": "Junior",
+        "devops": "No",
+        "plazo": "Normal (1-3 meses)",
+        "presupuesto_infra": "Alto ($200+ USD)",
+        "presupuesto_licencias": "Sí",
+        "mantenimiento": "Continuo con el mismo equipo",
+        "escalabilidad": "100-10k",
+        "complejidad_datos": "Media (varias entidades, relaciones moderadas)",
+        "rendimiento": "Bajo (no crítico)",
+        "tiempo_real": "Sí (websockets, colaboración en vivo)",
+        "offline_pwa": "No",
+        "multiplataforma": "No",
+        "i18n": "No",
+        "seguridad": "Medio (login, datos personales)",
+        "cloud": "AWS"
+      },
+      "recomendacion": {
+        "backend": "Node.js + Express + TypeScript",
+        "frontend": "No aplica (solo API)",
+        "bd": "PostgreSQL + Prisma",
+        "deploy": "Railway/Render + Neon"
+      },
+      "confianza": 75,
+      "metadatos": {}
+    }
+  ]
+}
